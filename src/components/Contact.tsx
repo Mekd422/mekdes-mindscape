@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,6 +24,12 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // EmailJS configuration
+  const EMAILJS_SERVICE_ID = 'service_t81cnnd';
+  const EMAILJS_TEMPLATE_ID = 'template_8le879i';
+  const EMAILJS_PUBLIC_KEY = 'meAPgoMdNRose-LHw';
 
   const contactInfo = [
     {
@@ -83,7 +90,7 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -95,19 +102,45 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon."
-    });
+    setIsSubmitting(true);
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject || 'New Contact Form Message',
+          message: formData.message,
+          to_name: 'Mekdes Assefa',
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon."
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Something went wrong. Please try again or contact me directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -249,10 +282,11 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-gradient-tech hover:shadow-glow transition-all duration-300"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-tech hover:shadow-glow transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Send className="h-5 w-5 mr-2" />
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
               </CardContent>
