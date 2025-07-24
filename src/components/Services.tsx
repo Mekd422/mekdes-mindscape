@@ -122,14 +122,7 @@ const Services = () => {
                     ))}
                   </div>
                   
-                  {/* Action Button */}
-                  <Button 
-                    variant="outline" 
-                    className="w-full group-hover:bg-gradient-tech group-hover:text-white group-hover:border-transparent transition-all duration-300"
-                  >
-                    Learn More
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                
                 </CardContent>
               </Card>
             );

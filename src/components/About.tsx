@@ -90,7 +90,7 @@ const About = () => {
 
             <Card className="border-none shadow-card bg-card">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6">My Story</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-6">About Me</h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     I'm a passionate third-year Software Engineering student who believes in the power of technology 

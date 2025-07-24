@@ -13,7 +13,7 @@ const Portfolio = () => {
       category: "Full Stack",
       color: "bg-gradient-tech",
       links: {
-        github: "#",
+        github: "https://github.com/Mekd422/GrindMate",
         demo: "#"
       }
     },
@@ -25,7 +25,7 @@ const Portfolio = () => {
       category: "AI/ML",
       color: "bg-gradient-secondary",
       links: {
-        github: "#",
+        github: "https://github.com/Mekd422/Interview-prep-AI",
         demo: "#"
       }
     },
@@ -37,7 +37,7 @@ const Portfolio = () => {
       category: "E-commerce",
       color: "bg-gradient-tech",
       links: {
-        github: "#",
+        github: "https://github.com/Mekd422/Amazon-clone",
         demo: "#"
       }
     },
@@ -55,13 +55,13 @@ const Portfolio = () => {
     },
     {
       title: "Virtual Aquarium",
-      description: "3D interactive website showcasing underwater environments with realistic fish behavior and physics simulation.",
+      description: "3D interactive website with realistic fish behavior and physics simulation.",
       status: "Completed",
       techStack: ["Three.js", "WebGL", "JavaScript", "CSS3"],
       category: "3D/WebGL",
       color: "bg-gradient-tech",
       links: {
-        github: "#",
+        github: "https://github.com/Mekd422/virtual-aquarium",
         demo: "#"
       }
     },
@@ -73,7 +73,7 @@ const Portfolio = () => {
       category: "Real-time",
       color: "bg-gradient-secondary",
       links: {
-        github: "#",
+        github: "https://github.com/Mekd422/Chat-App",
         demo: "#"
       }
     }
@@ -87,7 +87,7 @@ const Portfolio = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-tech bg-clip-text text-transparent mb-4">
-            My Portfolio
+            My Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of my technical projects, from full-stack applications to innovative solutions
