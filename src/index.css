@@ -19,21 +19,21 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
 
-    /* Tech-inspired primary colors - deep blue */
-    --primary: 220 70% 45%;
+    /* Colorblind-friendly primary - deep blue */
+    --primary: 220 85% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 90% 60%;
+    --primary-glow: 220 90% 65%;
 
-    /* Tech secondary - vibrant teal */
-    --secondary: 180 50% 50%;
+    /* Colorblind-friendly secondary - warm orange */
+    --secondary: 25 95% 55%;
     --secondary-foreground: 0 0% 100%;
 
     /* Muted tech greys */
     --muted: 220 10% 95%;
     --muted-foreground: 220 15% 45%;
 
-    /* Tech accent - electric purple */
-    --accent: 260 65% 55%;
+    /* Colorblind-friendly accent - neutral slate */
+    --accent: 215 25% 35%;
     --accent-foreground: 0 0% 100%;
 
     /* Tech gradients */
