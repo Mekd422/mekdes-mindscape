@@ -94,8 +94,7 @@ const About = () => {
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
                     I'm a passionate third-year Software Engineering student who believes in the power of technology 
-                    to transform lives. My journey combines technical expertise with a deep understanding of human 
-                    psychology and creative problem-solving.
+                    to transform lives. My journey combines technical expertise and creative problem-solving.
                   </p>
                   <p>
                     Currently pursuing my degree at Addis Ababa University, Whether I'm building applications or mentoring young 
