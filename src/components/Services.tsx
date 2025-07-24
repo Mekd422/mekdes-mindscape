@@ -69,7 +69,7 @@ const Services = () => {
 
   const techStack = [
     "React", "Node.js", "MongoDB", "Express.js", "TypeScript", "Flutter", 
-    "Kotlin", "Three.js", "Firebase", "REST APIs", "Git", "AWS"
+    "Kotlin", "Three.js", "Firebase", "REST APIs", "Git", "AWS", "JavaScript (ES6+) ", "Tailwind CSS ", "Responsive Design", 
   ];
 
   return (

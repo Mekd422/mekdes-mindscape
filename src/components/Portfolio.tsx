@@ -49,7 +49,7 @@ const Portfolio = () => {
       category: "Mobile",
       color: "bg-gradient-secondary",
       links: {
-        github: "#",
+        github: "https://github.com/yonas-t-a/Neuroparent-Flutter",
         demo: "#"
       }
     },
