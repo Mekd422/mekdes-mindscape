@@ -6,18 +6,9 @@ This portfolio is built using **Vite + React + TypeScript**, styled with **Tailw
 
 ## 🧠 About Me
 
-I'm a third-year Software Engineering student at **Addis Ababa University**, driven by curiosity and a passion for continuous learning. I specialize in full-stack development and UI/UX design, with experience in building both web and mobile applications.
+I'm a third-year Software Engineering student at **Addis Ababa University**, driven by curiosity and a passion for continuous learning. I specialize in full-stack development, with experience in building both web and mobile applications.
 
----
 
-## 🚀 Tech Stack
-
-- **Frontend:** React, TypeScript, Tailwind CSS, ShadCN UI
-- **Tooling:** Vite, ESLint, Git, GitHub
-- **Design:** Figma
-- **Other Skills:** Firebase, Node.js, Express, MongoDB, Flutter, Kotlin, NestJS
-
----
 
 
 
