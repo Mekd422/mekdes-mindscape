@@ -30,18 +30,6 @@ const Portfolio = () => {
       }
     },
     {
-      title: "Amazon Clone",
-      description: "A comprehensive e-commerce application simulating real-world online shopping experience with full payment integration.",
-      status: "Completed",
-      techStack: ["MongoDB", "Express.js", "React", "Node.js", "Stripe"],
-      category: "E-commerce",
-      color: "bg-gradient-tech",
-      links: {
-        github: "https://github.com/Mekd422/Amazon-clone",
-        demo: "#"
-      }
-    },
-    {
       title: "NeuroParent",
       description: "Mobile app connecting parents of neurodivergent children with experts, featuring event management and community building.",
       status: "Completed",
@@ -50,18 +38,6 @@ const Portfolio = () => {
       color: "bg-gradient-secondary",
       links: {
         github: "https://github.com/yonas-t-a/Neuroparent-Flutter",
-        demo: "#"
-      }
-    },
-    {
-      title: "Virtual Aquarium",
-      description: "3D interactive website with realistic fish behavior and physics simulation.",
-      status: "Completed",
-      techStack: ["Three.js", "WebGL", "JavaScript", "CSS3"],
-      category: "3D/WebGL",
-      color: "bg-gradient-tech",
-      links: {
-        github: "https://github.com/Mekd422/virtual-aquarium",
         demo: "#"
       }
     },
